@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
+import routes from "./routes";
 const app = express();
 
 app.use(cookieParser());
@@ -17,8 +18,8 @@ app.use(morgan("dev")); // 로그로 기록을 남김
 
 //router를 이용해서 미들웨어를 쪼개서 관리한다.
 // user라는 항목에 들어가게되면 userRouter가 실행되고, router.js 로 이동된다.
-app.use("/", globalRouter); //join, search, about page etc
-app.use("/user", userRouter);
-app.use("/video", videoRouter);
+app.use(routes.home, globalRouter); //join, search, about page etc
+app.use(routes.users, userRouter);
+app.use(routes.videos, videoRouter);
 
 export default app; // 내파일을 불러올때 app object를 준다
