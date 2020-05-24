@@ -8,9 +8,9 @@ const SEARCH = "/search";
 //USER
 
 const USERS = "/users";
-const USER_DETAIL = "/:id";
-const EDIT_PROFILE = "/edit-profile";
-const CHANEGE_PASSWORD = "/change_profile";
+const USER_DETAIL = "/users/:id";
+const EDIT_PROFILE = "/users/edit-profile";
+const CHANEGE_PASSWORD = "/users/change-profile";
 
 //Video
 

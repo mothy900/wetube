@@ -1,7 +1,11 @@
 header.header  
     .header__colume
         a(href=routes.home)
-            i.fab.fa-youtube 
+            di.fab.fa-youtube 
+    
+    .header__colume
+        form(action = routes.search, method="get")
+            input(type = "text", placeholder="Search by teram ...", name ="term")
     .header__colume
         ul
             li
