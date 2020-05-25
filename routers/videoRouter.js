@@ -1,7 +1,6 @@
 import express from "express";
 import routes from "../routes";
 import {
-  videos,
   upload,
   videoDetail,
   editVideo,
@@ -10,7 +9,6 @@ import {
 
 const videoRouter = express.Router();
 //router.js로 넘어오게 되면 해당 미들웨어를 새로 컨트롤 할 수 있게된다.
-videoRouter.get(routes.videos, videos);
 videoRouter.get(routes.upload, upload);
 videoRouter.get(routes.videoDetail, videoDetail);
 videoRouter.get(routes.editVideo, editVideo);
