@@ -1,24 +1,23 @@
-//Global
+// Global
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const SEARCH = "/search";
 
-//USER
-
+// user     :id -> 변하는 값
 const USERS = "/users";
-const USER_DETAIL = "/users/:id";
-const EDIT_PROFILE = "/users/edit-profile";
-const CHANEGE_PASSWORD = "/users/change-profile";
+const USER_DETAIL = "/:id";
+// ex)user/1
+const EDIT_PROFILE = "/edit-profile";
+const CHANGE_PASSWORD = "/change-password";
 
-//Video
-
+// videos
 const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
-const DELETE_VIDEO = "/:id/delete";
+const DELETE_VIDEO = "/id/delete";
 
 const routes = {
   home: HOME,
@@ -26,12 +25,10 @@ const routes = {
   login: LOGIN,
   logout: LOGOUT,
   search: SEARCH,
-
   users: USERS,
   userDetail: USER_DETAIL,
   editProfile: EDIT_PROFILE,
-  changePassword: CHANEGE_PASSWORD,
-
+  changePassword: CHANGE_PASSWORD,
   videos: VIDEOS,
   upload: UPLOAD,
   videoDetail: VIDEO_DETAIL,
