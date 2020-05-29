@@ -1,6 +1,7 @@
+import "./db";
 import app from "./app";
 
-const PORT = 7000;
+const PORT = 6000;
 
 const handleListening = () =>
   console.log(`Listening on: http://localhost:${PORT}`);
