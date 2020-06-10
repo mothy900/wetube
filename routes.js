@@ -17,7 +17,7 @@ const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
-const DELETE_VIDEO = "/id/delete";
+const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
   home: HOME,
@@ -42,6 +42,7 @@ const routes = {
       return `/videos/${id}`;
     } else {
       return VIDEO_DETAIL;
+      console.log("video Detail else");
     }
   },
   //editVideo: EDIT_VIDEO,
